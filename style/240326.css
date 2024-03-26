@@ -1,0 +1,24 @@
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: rgb(217, 215, 204);
+}
+table{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+header{
+    width: 100%; height: 15%; background: rgb(218, 180, 181);
+    text-align: center
+}
+nav{
+    width: 15%; height: 70%; float: left; background: rgb(125, 149, 175);
+}
+section{
+    width: 85%; height: 70%; float: left; background: rgb(113, 104, 102);
+}
+footer{
+    width: 100%; height: 15%;clear: both; background: rgb(191, 134, 136);
+    text-align: center
+}

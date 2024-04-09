@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>240409 JavaScript</title>
+</head>
+<body>
+    <p>
+        자바 스크립트 테스트
+    </p>
+    <p id="test">
+        자바 스크립트 테스트
+    </p>
+    <script>
+        //자바스크립트 이용하여 문서에 출력하기 write
+        document.write("Hello World <br> x+y=");
+        let x=5; //변수 만들기
+        let y=6;
+        let z = x+y;
+        document.write(z);
+        document.getElementById("test").innerHTML = "연산결과: "+z;
+        document.write("<br>") //태그를 사용할때 문자처럼 "" 안에 넣음
+        document.write("<br> 배다은이랑 이서아는 바보다 <br><br>")
+
+        let s1="Good";
+        let s2="Morning";
+        let s3="chaelin";
+        document.write(s1 +s2 +s3+"<br>")
+        document.write(s3.toUpperCase()+"<br>")
+
+        let age = parseInt(prompt("나이를 입력하세요:"));
+        document.write("<br> 당신은 내년이면 "+(age+1)+"살 입니다.");
+    </script>
+
+    <br>
+    <button onclick="sub()">이름입력버튼</button>
+    <h1 id="name">
+        함수연습1
+    </h1>
+    <h1 id="ftest">
+        함수연습2
+    </h1>
+    <button onclick="sub1()">함수연습버튼</button>
+
+
+    <script>
+        function sub(){
+            const name = prompt('이름:');
+            document.getElementById("name").innerHTML ="Welcome: " + 
+            name + "님 즐거운 날 보내세요";
+        }
+
+        function sub1(){
+        e = document.getElementById("ftest");
+        e.style.color = "blue";
+        }
+
+    </script>
+</body>
+</html>

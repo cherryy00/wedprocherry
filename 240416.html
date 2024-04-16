@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>240416 실습</title>
+    <script>
+        function hello(){
+            alert("너 바보구나 !");
+        }
+    </script>
+    <script>
+        function gugudan(){
+            let number = parseInt(prompt("숫자를 입력하세요:"));
+            result = "";
+            for (let j = 2; j <= 9; j++) {
+                result += number + "*" + j + "=" + number*j + "<br>";
+            }
+            document.getElementById("gugudan").innerHTML = result;
+        }
+    
+    </script>
+</head>
+<body>
+    <h1 id="test">시간</h1>
+    <script>
+        //Date 현재 시간값을 갖는 객체와 if
+        let time = new Date().getHours();
+        let msg;
+        document.getElementById("test").innerHTML = "TIME" + time;
+        if (time<12){
+            msg =" Good Morning";}
+        else{
+            msg = "Good Afternoon";
+        }
+        document.getElementById("test").innerHTML = msg;
+    </script>
+    <hr>
+    <script>
+        let i = 0;
+        for(i=0; i<10; i++){
+            document.write("Count: "+ "<H"+i+">Header" +i);
+        }
+    </script>
+    <hr>
+    <script>
+        let x = 0;
+        while (x < 10) {
+            document.write("while 카운터 : " + x + "<br />");
+            x++;
+        }
+        for (x = 0; x < 10; x++) {
+            document.write("<H" + x + ">" + "For test: H" + x);
+        }
+    </script>
+    <hr>
+    <h1 id="ttest"></h1>
+    <script>
+        let day = new Date().getDay();
+        switch (day) {
+            case 0:
+            case 6:
+                day = "주말";
+                break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                day = "주중";
+                break;
+        }
+        document.getElementById("ttest").innerHTML = "오늘은 " + day + "입니다";
+    </script>
+    <hr>
+    <script>
+        let b = "";
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) break;
+            b += i + "<br>";
+        }
+        document.write(b);
+    </script>
+    <hr>
+    <script>
+        let a = "";
+        for (let i = 0; i < 10; i++) {
+                if (i == 3) continue;
+            a += i + " ";
+        }
+        document.write(a);
+       </script>   
+       <hr>
+       <h1>구구단 만들기</h1>
+       <script>
+        for(let dan=2; dan<=9; dan++){
+            document.write(dan + "단<br>");
+            for(let k=1; k<=9; k++){
+                document.write(dan +"*" + k + "=" + dan*k+"<br>")
+            }
+            document.write("<hr>");
+        }
+       </script>
+       <script>
+            document.write("<h1>구구단표</h1>");
+            document.write("<table border=2 width=50%");
+            for (let i = 1; i <= 9; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                for (let j = 2; j <= 9; j++) {
+                    document.write("<td>" + i * j + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+       </script>
+       <hr>
+        <button onclick="hello()">이거 누르면 바보</button>
+        <button onclick="gugudan()">구구단</button>
+        <div id="gugudan">
+
+        </div>
+</body>
+</html>

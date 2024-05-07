@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>240507 실습</title>
+
+    <script>
+        let s = "One/Two/Three/Four/Five";
+        array = s.split('/');
+        for (i = 0; i< array.length; i++){
+            document.write(i + '-' + array[i] + '<br>');
+        }
+    </script>
+</head>
+<body>
+    <p id = "test">다음에 학습할 내용은 HTML입니다.</p>
+    <button onclick="myFun()">HTML 학습을 끝냈으면 누르세요.</button>
+    <script>
+        function myFun(){
+            let text = document.getElementById("test").innerHTML;
+            document.getElementById("test").innerHTML = text.replace("HTML", "JAVASCRIPT");
+        }
+    </script>
+    <br><br>
+
+    <button onclick="lotto()">무료 로또 번호 !</button>
+    <p id = "testt">과연 이번주 로또 번호는 !!</p>
+    <script>
+        function lotto(){
+            let f;
+            let n;
+            let msg = ""
+
+            for (let i = 0; i<6; i++){
+                f = (Math.random() * 45)+1;
+                n = Math.floor(f); 
+                msg += n+ " ";      
+        }
+        document.getElementById("testt").innerHTML= msg;
+        //alert("행운의 번호: "+msg);
+        }
+    </script>
+    <br>
+    <script>
+        function printArray(a) {
+            document.write("[ ");
+            let sum = 0;
+            for (let i = 0; i < a.length; i++){
+                document.write(a[i] + " ");
+                sum += a[i];
+            }
+            document.write(" ]<br>", sum);
+        }
+        let fruit1 = new Array("apple", "banana", "orange");
+        let name = ["choi", "lee", "yun", "bae"];
+        let number = [25 , 23 , 22, 20, 50];
+
+        printArray(fruit1);
+        printArray(name);
+        printArray(number);
+    </script>
+    <br><br>
+    <h2 id = 'testtt'>로그인<h2>
+    <script>
+        let admin = ["Bae", "Lee", "byeon"]
+        person = prompt("아이디를 입력하시오: ", "");
+        document.getElementById("testtt").innerHTML = "로그인 실패";
+        for(i=0; i<admin.length; i++){
+            if(person == admin[i]){
+                document.getElementById("testtt").innerHTML = "로그인 성공";
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

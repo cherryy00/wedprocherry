@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style/240515.css">
+    <script>
+        function checkID(){
+            let s = document.getElementById("id").value;
+            if(s.length < 3)
+                alert("검색어는 3글자 이상이어야 합니다.");
+            if(s.length >= 3)
+            alert("검색어가 없습니다.");
+        }
+    </script>
+    <script>
+        function rogin(){
+            while(true){
+                let f = prompt("학번을 입력하세요");
+                if(f >= 20150000, f < 20250000){
+                    alert("확인되었습니다.");
+                    break;
+                }
+                else {
+                    alert("학번을 제대로 입력해주세요");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <br>
+        <ul class="hi">
+            <h2>디지털미래융합대학 학생회</h2>
+            <img id="me" src="images/daejeon.jpg" alt = "대전대학교 로고">
+            <li> <a href="sogae.html">학생회소개</a> </li>
+            <li> <a href="jaryo.html">사진자료실</a> </li>
+            <li> <a href="comunity.html">미융잡담</a> </li>
+            <button onclick="rogin()">로그인</button>&nbsp;&nbsp;&nbsp;
+            <input type = "text" id ="id" size = 10>
+            <button onclick="checkID()">검색</button>&nbsp;&nbsp;&nbsp;
+        </ul>
+        <br>
+    </header>
+    <section>
+        <div>
+            <h3>디지털미래융합대학 학생회 홈페이지에 오신 것을 환영합니다!</h3>
+            <h2 id='clock'>시계</h2>
+        </div>
+        <a href="jaryo.html"><img id="m" src="images/a.jpeg" alt=""></a>
+        <script>
+            function setClock() {
+                let now = new Date();
+                let a = '현재 시간<br>' + now.getHours() + '시&nbsp;' + now.getMinutes() + '분&nbsp;' + now.getSeconds() + '초';
+    
+                document.getElementById('clock').innerHTML = a;
+    
+                setTimeout('setClock()', 1000);
+            }
+            setClock();
+        </script>
+        <a href="https://zrr.kr/7AtY"><img id="A" src="images/B.jpg" alt=""></a>
+        <br>
+        ❤️ 모두의 바람이 하나의 이룸으로 ❤️
+        <br>
+    </section>
+    <footer>
+        <br>
+        <ul class="bi">
+            <li> <a href="https://zrr.kr/1fbT">학사공지</a> </li>
+            <li> <a href="https://zrr.kr/7AtY">학사일정</a> </li>
+            <li> <a href="https://www.dju.ac.kr/dju/main.do">대전대학교</a> </li>
+            <li> <a href="https://www.instagram.com/dju.convergence?igsh=eTh4dDFreWFiMWli">인스타그램</a> </li>
+            <br>
+        </ul>
+        <br>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <script>
+        function submit(){
+            let t = document.getElementById("di").value;
+            if(t.length < 10)
+                alert("10자 이상으로 작성해주세요.");
+            if(t.length >= 10)
+            alert("글이 작성되었습니다.");
+        }
+        function change1(obj, size, color){
+            obj.style.color = color;
+            obj.style.fontSize = size;
+        }
+    </script>
+    <style>
+        header{
+        width: 80%; height: 25%; background: rgb(212, 42, 255);
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        }   
+        section{
+            width: 72%; height: 50%; background: rgb(240, 182, 255);
+            text-align: center;
+            padding: 50px;
+            margin: 0 auto;
+
+        }
+        footer{
+            width: 80%; height: 25%;clear: both; background: rgb(229, 125, 255);
+            text-align: center;
+            position: relative;
+            margin: 0 auto;
+        }
+        ul.hi{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .hi li{
+            display: inline;
+            text-transform: uppercase;
+            padding: 10px;
+            letter-spacing: 10px;
+        }
+        .hi li a{
+            text-decoration: none;
+            color: black;
+        }
+        .hi li a:hover{
+            text-decoration:underline;
+        }
+        #m{
+            width: 380px;
+            height: 330px;
+            border: 1px solid black;
+            margin: 20px;
+            float: left;
+        }
+        ul.bi{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .bi li{
+            display: inline;
+            text-transform: uppercase;
+            padding: 10px;
+            letter-spacing: 10px;
+        }
+        .bi li a{
+            text-decoration: none;
+            color: black;
+        }
+        .bi li a:hover{
+            text-decoration:underline;
+        }
+        ul.nav{
+            list-style: none;
+            text-align: center;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 3px
+        }
+        .nav li{
+            display: inline;
+            text-transform: uppercase;
+            padding: 10px;
+            letter-spacing: 9px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav li a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <ul class="hi">
+            <h2>디지털미래융합대학 학생회</h2>
+            <li> <a href="index.html">홈</a> </li>
+            <li> <a href="sogae.html">학생회소개</a> </li>
+            <li> <a href="jaryo.html">사진자료실</a> </li>
+            <li> <a href="comunity.html">미융잡담</a> </li>
+        </ul>
+        <br>
+    </header>
+    <section>
+        <div>
+            <h3>미융잡담</h3>
+        </div>
+        <ul class="nav">
+            <li><a href="#qw">자유게시판</a></li>
+            <li><a href="#qe">새내기게시판</a></li>
+            <li><a href="#qr">동아리 모집</a></li>
+            <li><a href="#qt">스터디 모집</a></li>
+            <li><a href="#qy">미융마켓</a></li>
+        </ul>
+        <div id="qw"><br>
+            <h3>자유게시판</h3>
+            남문에 고양이 귀엽더라 -고양사랑녀-
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            오늘 노경숙 교수님 수업 안 갔는데 전달사항 있었니 ?? -자바어려워잉잉- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            도서관 1열람실 초록 옷 잘생겼어요 ㅠㅠ -외로운사람- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <textarea name="feedback" id="di" cols="50"></textarea><br>
+            <button onclick="submit()">제출</button><br><br>
+        </div><br><hr>
+        <div id="qe">
+            <h3>새내기게시판</h3>
+            수업 중에 화장실 가고 싶을 때 선생님 부르고 허락 맡아야 하는 거 맞죠?? -응애나새내기👶- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            시간표 대체 어떡헤 짜는거얘요ㅠㅠ? -24학번박서준- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            5생 하트홀 사는 사람 친구하쟈 -친구조아😍- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <textarea name="feedback" id="di" cols="50"></textarea><br>
+            <button onclick="submit()">제출</button><br><br>
+        </div><br><hr>
+        <div id="qr">
+            <h3>동아리 모집</h3>
+            게임 동아리 SunRise 모집 중 ! 같이 게임해요 ! -이월이누나😺- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            배구 동아리 모집합니다. 관심있는 분 쪽지주세요 -하이큐사랑녀- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            아직 모집하는 동아리 있나요?? -아무고토몰라요- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <textarea name="feedback" id="di" cols="50"></textarea><br>
+            <button onclick="submit()">제출</button><br><br>
+        </div><br><hr>
+        <div id="qt">
+            <h3>스터디 모집</h3>
+            일본어 스터디 하실 분 모집합니다. 초보도 좋아요 -아리가또- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            같이 코딩 공부하실 분 !! 공대 우대 !! -c언어마스터- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            토익 800점 이상 목표로 하시는 분 같이 공부해요 -모의토익시러- 
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <textarea name="feedback" id="di" cols="50"></textarea><br>
+            <button onclick="submit()">제출</button><br><br>
+        </div><br><hr>
+        <div id="qy">
+            <h3>미융마켓</h3>
+            <판매>핀테크학과 정보보안개론 싸게 팝니다 -관수교수님미워-
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <판매>스튜시 반팔티 판매 네고 가능 -돈이급해요-
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <구매>5생 컵라면 파시는 분 ㅠㅠ 배가 너무 고파요 -헝그리남-
+            <button onclick="change1(this, '14px', 'red')">좋아요</button><br><br>
+            <textarea name="feedback" id="di" cols="50"></textarea><br>
+            <button onclick="submit()">제출</button><br><br>
+        </div><br>
+        <br>
+    </section>
+    <footer>
+        <br>
+        <ul class="bi">
+            <li> <a href="https://zrr.kr/1fbT">학사공지</a> </li>
+            <li> <a href="https://zrr.kr/7AtY">학사일정</a> </li>
+            <li> <a href="https://www.dju.ac.kr/dju/main.do">대전대학교</a> </li>
+            <li> <a href="https://www.instagram.com/dju.convergence?igsh=eTh4dDFreWFiMWli">인스타그램</a> </li>
+            <br>
+        </ul>
+        <br>
+    </footer>
+</body>
+</html>

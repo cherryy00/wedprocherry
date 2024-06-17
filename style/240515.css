@@ -1,0 +1,85 @@
+header{
+    width: 80%; height: 25%; background: rgb(127, 255, 115);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}   
+#me{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+section{
+    width: 72%; height: 50%; background: rgb(232, 255, 230);
+    text-align: center;
+    padding: 50px;
+    margin: 0 auto;
+
+}
+footer{
+    width: 80%; height: 25%;clear: both; background: rgb(185, 255, 179);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+ul.hi{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.hi li{
+    display: inline;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 10px;
+}
+.hi li a{
+    text-decoration: none;
+    color: black;
+}
+.hi li a:hover{
+    text-decoration:underline;
+}
+#m{
+    width: 380px;
+    height: 330px;
+    border: 1px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#clock{
+    position: absolute;
+    top: 170px;
+    right: 14%;
+    font-size: 18px;
+    color: blue;
+}
+#A{
+    width: 330px;
+    height: 330px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+ul.bi{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.bi li{
+    display: inline;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 10px;
+}
+.bi li a{
+    text-decoration: none;
+    color: black;
+}
+.bi li a:hover{
+    text-decoration:underline;
+}
